@@ -31,6 +31,9 @@ video, .bg-img{
     align-items: center;
     gap: 2rem;
 }
+.nav-bar ul li{
+    list-style: none;
+}
 .nav-bar ul li a{
     text-decoration: none;
     color: #fff;
@@ -157,6 +160,9 @@ video, .bg-img{
         }
 }
 @media screen and (max-width: 425px) {
+    .nav-bar{
+            padding: 1rem 2rem;
+    }
     .hero-title {
             font-size: 5rem;
         }
@@ -171,7 +177,7 @@ video, .bg-img{
         border-radius: 6px;
         margin-top: 10px;
         position: absolute;
-        top: 0;
+        top: 3rem;
         width: 85%;
 
     }

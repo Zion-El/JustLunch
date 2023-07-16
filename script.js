@@ -35,22 +35,6 @@ function closeMenu() {
 
 
 
-var videoElement = document.getElementById('my-video');
-var playButton = document.getElementById('play-button');
-
-playButton.addEventListener('click', function() {
-  if (videoElement.requestFullscreen) {
-    videoElement.requestFullscreen();
-  } else if (videoElement.mozRequestFullScreen) { // Firefox
-    videoElement.mozRequestFullScreen();
-  } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-    videoElement.webkitRequestFullscreen();
-  } else if (videoElement.msRequestFullscreen) { // Internet Explorer and Edge
-    videoElement.msRequestFullscreen();
-  }
-
-  videoElement.play();
-});
 
 
 
