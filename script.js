@@ -33,3 +33,22 @@ function closeMenu() {
   
 }
 
+
+
+var backgroundVideo = document.getElementById('background-video');
+
+function playBackgroundVideo() {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    // Mobile view: Pause the video
+    backgroundVideo.pause();
+  } else {
+    // Desktop view: Play the video
+    backgroundVideo.play();
+  }
+}
+
+// Call the function on page load and window resize
+window.addEventListener('load', playBackgroundVideo);
+window.addEventListener('resize', playBackgroundVideo);
+
+
