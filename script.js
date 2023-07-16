@@ -35,20 +35,22 @@ function closeMenu() {
 
 
 
-var backgroundVideo = document.getElementById('background-video');
+var videoElement = document.getElementById('my-video');
+var playButton = document.getElementById('play-button');
 
-function playBackgroundVideo() {
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    // Mobile view: Pause the video
-    backgroundVideo.pause();
-  } else {
-    // Desktop view: Play the video
-    backgroundVideo.play();
+playButton.addEventListener('click', function() {
+  if (videoElement.requestFullscreen) {
+    videoElement.requestFullscreen();
+  } else if (videoElement.mozRequestFullScreen) { // Firefox
+    videoElement.mozRequestFullScreen();
+  } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+    videoElement.webkitRequestFullscreen();
+  } else if (videoElement.msRequestFullscreen) { // Internet Explorer and Edge
+    videoElement.msRequestFullscreen();
   }
-}
 
-// Call the function on page load and window resize
-window.addEventListener('load', playBackgroundVideo);
-window.addEventListener('resize', playBackgroundVideo);
+  videoElement.play();
+});
+
 
 
