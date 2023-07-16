@@ -197,6 +197,9 @@ video{
         display: none;
     }
 
+        .social {
+            bottom: 2rem;
+        }
 
 }
 
