@@ -1,0 +1,20 @@
+#menu{
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/jollof.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-overlay {
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .6;
+}

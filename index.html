@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Lunch lunch restaurant food fast-food " />
+        <meta name="description" content="Just Lunch........" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Just Lunch</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+
+        <button onclick="showMenu()" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <button onclick="closeMenu()" id="closer"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-container" id="home">
+
+        <div class="hero-video-container">
+            <video class='' autoplay loop>
+                <source src='assets/px1.mp4' type="video/mp4" />
+            </video>
+        </div>
+    
+        <!-- {/* overLay */} -->
+  
+        <div class='hero-overlay'>
+    
+        </div>
+
+            <div class='hero-container-content '>
+                <div class="hero-text">
+                    <h1 class='hero-title'>Just Lunch
+                    </h1>
+                    <p class="hero-desc">... delivering a tasty afternoon</p>
+                </div>
+                <div>
+                    <a href="">
+                        <button class=''>Order Now</button>
+                    </a>
+        
+                </div>
+            </div>    
+    
+    </div>
+
+    <!-- MENU SECTION -->
+    <div id="menu">
+        <div class='menu-overlay'></div>
+
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <div id="gallery"></div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="contact-overlay">
+
+        </div>
+        <!-- <div class="container glass">
+
+        </div> -->
+        <div class="contact-body glass">
+            <div class="contact-us">
+                <p class="contact-connect">Connect with us</p>
+
+                <h1>Get In Touch</h1>
+
+                <p class="contact-desc" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est laboriosam libero, sequi praesentium veniam soluta
+                ratione earum vero voluptatum accusantium sunt repudiandae, laborum fuga debitis modi. Blanditiis quaerat
+                praesentium illum.</p>
+
+            </div>
+            <div class="contact">
+                <form action="">
+                    <div class="form-input">
+                        <p>Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="form-input">
+                        <p>Email</p>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div class="form-input">
+                        <p>Message</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button>
+                            Send Message
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

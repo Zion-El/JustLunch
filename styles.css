@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Lobster+Two:ital,wght@1,400;1,700&family=Nunito:wght@300&family=Rubik+Dirt&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.nav-bar{
+    width: 100%;
+    padding: 2rem 2rem;
+    position: fixed;
+     top: 0;
+     z-index: 999;
+
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Aref Ruqaa';
+    /* padding: 1rem; */
+
+    transition: all ease-out .3s;
+}
+.nav-bar ul li a:hover{
+    border-radius: 4px;
+    border-bottom: 1px solid #fff;
+}
+    .nav-bar button{
+             border: none;
+            background-color: transparent;
+            color: #fff;
+    }
+        #hamburger, #closer {
+            display: none;
+
+        }
+        
+
+
+
+.hero-container{
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.hero-video-container{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.hero-overlay{
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    background: #000;
+
+}
+
+.hero-container-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-text{
+    width: 100%;
+    text-align: center;
+}
+
+.hero-title{
+    font-family: 'Great Vibes';
+    color: #fff;
+    font-size: 10rem;
+    opacity: .9;
+}
+.hero-desc{
+    font-family: 'Lobster Two';
+    color: #fff;
+    text-align: center;
+    opacity: .7;
+    /* font-size: 10rem; */
+}
+.hero-container-content button{
+    border: 1px solid #fff;
+    padding: .7rem 2rem;
+    border-radius: 8px;
+    color: #fff;
+    background-color: transparent;
+    transition: all ease-in .3s;
+    margin-top: 2rem;
+    font-family: 'Aref Ruqaa';
+    letter-spacing: 2px;
+}
+.hero-container-content button:hover{
+    background-color: #FFB100;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+            font-size: 7rem;
+
+        }
+}
+@media screen and (max-width: 425px) {
+    .hero-title {
+            font-size: 5rem;
+        }
+    #nav-menu{
+        display: none;
+    }
+    #nav-menu.show{
+        transition: all ease-in-out 1s;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+    #nav-menu.show li{
+        background-color: #FFB100;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        opacity: .9;
+    }
+
+    #nav-menu.show li a{
+        width: 100%;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    #closer.show{
+        display: block;
+    }
+
+    #hamburger.hide{
+        display: none;
+    }
+
+
+}
