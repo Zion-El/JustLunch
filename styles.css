@@ -19,7 +19,9 @@ video{
     position: fixed;
      top: 0;
      z-index: 999;
-
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-bar ul{
     display: flex;
@@ -49,8 +51,30 @@ video{
 
         }
         
+.logo{
+    font-family: 'Rubik Dirt';
+    color: #fff;
+    font-size: 2rem;
+}
 
-
+.social{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social a{
+    color: #fff;
+}
+.social .line{
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
 
 .hero-container{
     max-width: 100%;
@@ -144,6 +168,10 @@ video{
         gap: 0;
         border-radius: 6px;
         margin-top: 10px;
+        position: absolute;
+        top: 0;
+        width: 85%;
+
     }
     #nav-menu.show li{
         background-color: #FFB100;
@@ -171,3 +199,24 @@ video{
 
 
 }
+
+
+
+         .float {
+             position: fixed;
+             width: 60px;
+             height: 60px;
+             bottom: 40px;
+             right: 40px;
+             background-color: #25d366;
+             color: #FFF;
+             border-radius: 50px;
+             text-align: center;
+             font-size: 30px;
+             box-shadow: 2px 2px 3px #999;
+             z-index: 100;
+         }
+    
+         .my-float {
+             margin-top: 16px;
+         }
