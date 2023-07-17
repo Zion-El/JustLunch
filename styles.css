@@ -279,6 +279,10 @@ video, .bg-img{
     
 }
 @media screen and (max-width: 425px) {
+    .contain{
+        padding: .5rem 1rem;
+    }
+
     .nav-bar{
             padding: 1rem 2rem;
     }
@@ -305,8 +309,8 @@ video, .bg-img{
              position: fixed;
              width: 40px;
              height: 40px;
-             bottom: 20px;
-             right: 20px;
+             bottom: 10px;
+             right: 10px;
              background-color: #25d366;
              color: #FFF;
              border-radius: 50px;

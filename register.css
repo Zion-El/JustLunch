@@ -78,10 +78,14 @@ small a{
 @media screen and (max-width: 425px) {
     .register-body {
         flex-direction: column;
-        padding: 1rem .5rem;
+        padding: 1.5rem .5rem;
+        width: 90%;
     }
     .form-section {
             width: 100%;
+        }
+        .login-section {
+            margin-top: 1rem;
         }
 }
 
