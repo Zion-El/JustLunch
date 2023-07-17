@@ -1,0 +1,88 @@
+#register{
+    background-image: url('assets/register.jpg');
+}
+#login{
+    background-image: url('assets/we.avif');
+}
+
+.divider{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.register-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    padding: 4rem 2rem;
+}
+
+.form-section{
+    width: 50%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+form input{
+    padding: 12px 6px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+    color: #2C3433;
+    font-family: 'Nunito';
+}
+form input::placeholder{
+    font-family: 'Nunito';
+    color: #2C3433;
+    opacity: .8;
+}
+
+.regBtn button{
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Aref Ruqaa';
+    background-color: #2C3433;
+    color: #EEEEEE;
+    border: none;
+}
+
+.regBtn button:hover {
+    background-color: #000;
+}
+
+small {
+    text-align: right;
+    font-family: 'Aref Ruqaa';
+}
+small a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.login-section{
+    margin-top: 4rem;  
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+
+}
+
+@media screen and (max-width: 425px) {
+    .register-body {
+        flex-direction: column;
+        padding: 1rem .5rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
