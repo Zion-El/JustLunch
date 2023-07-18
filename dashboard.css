@@ -67,6 +67,9 @@ nav{
     height: 40px;
     border-radius: 50%;
     background: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profiler{
