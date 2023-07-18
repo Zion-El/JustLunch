@@ -1,0 +1,33 @@
+#wallet .overview {
+    height: 10rem;
+    width: 100%;
+    background-color: #eee;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: .9;
+    /* overflow-y: scroll !important; */
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.action button {
+    width: 48%;
+    padding: 10px;
+    color: #fff;
+    font-size: 'Kanit';
+    border: none;
+}
+
+.action .add {
+    background-color: green;
+}
+
+.action .withdraw {
+    background-color: #FFB100;
+    color: #fff;
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Lobster+Two:ital,wght@1,400;1,700&family=Nunito:wght@300&family=Rubik+Dirt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+   
+}
+
+.logo span{
+    font-style: italic;
+    font-family: 'Rubik Dirt';
+    font-size: 32px;
+    letter-spacing: -5px;
+}
+
+.main{
+    /* height: 100vh; */
+    /* background-color: #E0E0EE; */
+    position: relative;
+}
+
+
+.overlay{
+        background-image: url('assets/ewa.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        min-height: 100vh;
+        width: 100%;
+        z-index: -999;
+        position: absolute;
+        top: 0;
+        left: 0;
+}
+.overlayer{
+    background-color: #000;
+            min-height: 100vh;
+                width: 100%;
+                opacity: .9;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    position: fixed;
+    border-bottom: 1px solid gray;
+    z-index: 999;
+    background-color: #EEEEEE;
+}
+.dashboard{
+    width: 100%;
+    padding: 5rem 8rem 2rem 8rem;
+    min-height: 100vh;
+}
+
+
+.image-container{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #999;
+}
+
+.profiler{
+    position: relative;
+}
+.profiler button{
+    background: none;
+    border: none;
+}
+
+#drawer{
+    position: absolute;
+    top: 4rem;
+    right: -12rem;
+    width: 10rem;
+    transition: all ease-in .5s;
+    border-radius: 6px;
+}
+
+#drawer ul li{
+    list-style: none;
+    width: 100%;
+    background-color: green;
+    padding: 1rem;
+    border-bottom: 1px solid #FFB100;
+}
+
+#drawer ul .log{
+    background-color: #2C3433;
+    border-bottom: 1px solid #2C3433;
+}
+#drawer ul .log:hover{
+    background-color: #000;
+}
+#drawer ul li a{
+    color: #EEEEEE;
+    text-decoration: none;
+    font-family: 'Aref Ruqqa';
+    height: 100%;
+    width: 100%;
+}
+
+.profiler button:hover .drawer{
+    right: 0;
+}
+
+#drawer.show{
+    right: 0;
+}
+
+.b-nav{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30% ;
+    z-index: 999;
+    left: 1rem;
+}
+
+.tab-container{
+    width: 100%;
+    background-color: #EEEEEE;
+    opacity: .5;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 1.5rem;
+    transition: all ease-in .3s;
+}
+.tab-container:hover{
+    opacity: 1;
+}
+
+.tab-container button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito';
+    gap: 3px;
+}
+.tab-container a{
+    text-decoration: none;
+}
+.tab-container button i{
+    color: #000;
+    margin: auto;
+    /* display: flex;
+    align-items: center; */
+}
+
+
+
+.overview{
+    height: 10rem;
+    width: 100%;
+    background-color: #FFB100;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: .9;
+    /* overflow-y: scroll !important; */
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.action button{
+    width: 48%;
+    padding: 10px;
+    color: #fff;
+    font-size: 'Kanit';
+    border: none;
+}
+.action .add{
+    background-color: green;
+}
+.action .make{
+    color: green;
+}
+
+
+#profile.hide, #home.hide, #wallet.hide, #transaction.hide{
+    display: none;
+}
+
+#homebtn.active, #walletbtn.active, #profilebtn.active, #historybtn.active{
+    border: 1px solid green;
+    border-radius: 50%;
+    /* padding: 1px; */
+    color: green;
+    transition: all ease-in-out .5s;
+}
+#homebtn.active i, #walletbtn.active i, #profilebtn.active i, #historybtn.active i{
+    color: green;
+    margin-bottom: -5px;
+    
+}
+
+
+@media screen and (max-width: 425px) {
+    .dashboard {
+            padding: 4rem 10px;
+        }
+    .b-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            left: 0;
+        }
+    
+        .tab-container {
+            width: 100%;
+            background-color: #EEEEEE;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            gap: 0;
+            opacity: 1;
+        }
+    
+        .tab-container button {
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Nunito';
+            /* gap: 3px; */
+        }
+    
+        .tab-container a {
+            text-decoration: none;
+        }
+    
+        .tab-container button i {
+            color: #000;
+            margin: auto;
+            /* display: flex;
+        align-items: center; */
+        }
+}

@@ -10,7 +10,7 @@
 
 .contain{
         max-width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             width: 100%;
             position: relative;
             margin: auto;
@@ -112,6 +112,16 @@ video, .bg-img{
     padding: 5px 10px;
 }
 
+.nav-menu li button{
+    background: none;
+    border: none;
+}
+
+#home.hide, #menu.hide, #contact.hide, #about.hide, #gallery.hide{
+    display: none;
+}
+
+
 .auth{
     display: none;
 }
@@ -120,6 +130,8 @@ video, .bg-img{
     font-family: 'Rubik Dirt';
     color: #fff;
     font-size: 2rem;
+    letter-spacing: -5px;
+    font-style: italic;
 }
 
 .social{

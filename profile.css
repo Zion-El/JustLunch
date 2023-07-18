@@ -1,0 +1,71 @@
+.profile-header h2{
+    text-align: center;
+    font-family: 'Aref Ruqaa';
+    color: #EEEEEE;
+    margin: 2rem auto;
+}
+.form{
+    width: 100%;
+}
+
+.form-container{
+    width: 100%;
+}
+
+.form-box{
+    margin-top: 15px;
+}
+.form-box p{
+    font-family: 'Nunito';
+    color: #EEEEEE;
+}
+
+.form-container input, textarea{
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #EEEEEE;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.form-container input::placeholder, textarea::placeholder{
+    font-family: 'Aref Ruqaa';
+    font-size: 12px;
+    color: gray;
+}
+
+.regBtn button{
+    padding: 10px 10px;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    font-family: 'Aref Ruqaa';
+    border: none;
+}
+
+.security a{
+    font-size: 'Aref Ruqaa';
+    text-decoration: none;
+    color: #EEEEEE;
+    float: right;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    #profile .overlay, .overlayer {
+            width: 100%;
+            min-height: 125vh;
+        }
+}
+@media screen and (max-width: 414px) {
+    #profile .overlay, .overlayer {
+            width: 100%;
+            min-height: 100vh;
+        }
+}
+@media screen and (max-width: 375px) {
+    #profile .overlay, .overlayer {
+            width: 100%;
+            min-height: 130vh;
+        }
+}

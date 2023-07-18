@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Just Lunch</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <section class="main">
+        <div class="overlay">
+            <div class="overlayer"></div>
+        </div>
+        <nav>
+            <div class="logo">
+                <span style="color: #FFB100;">J</span> <span style="color: green;">L</span>
+            </div>
+            <div class="profiler">
+                <button onclick="showProfiler()">
+                    <div class="image-container">
+
+                    </div> 
+                </button>
+
+                <div id="drawer">
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="/">Go Home</a></li>
+                        <li class="log"><a href="login.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BOTTOM NAV -->
+        <section class="b-nav">
+            <div class="tab-container">
+                <a class="home" href="#home">
+                    <button onclick="homeAlone()" id="homebtn" class="active"><i class="fa fa-home" aria-hidden="true"></i><small>Home</small></button>
+                </a>
+                <a class="wallet" href="#wallet">
+                    <button onclick="walletAlone()" id="walletbtn"><i class="fa fa-credit-card" aria-hidden="true"></i><small>Wallet</small></button>
+                </a>
+                <a class="menu" href="#menu">
+                    <button onclick="menuAlone()" id="menubtn"><i class="fa fa-credit-card" aria-hidden="true"></i><small>Menu</small></button>
+                </a>
+                <a class="history" href="#history">
+                    <button id="historybtn"><i class="fa fa-credit-card" aria-hidden="true"></i><small>Transactions</small></button>
+                </a>
+                <a class="profile" href="#profile">
+                    <button onclick="profileAlone()" id="profilebtn"><i class="fa fa-user" aria-hidden="true"></i><small>Profile</small></button>
+                </a>        
+            </div>
+        </section> 
+        
+        <section id="home" class="dashboard">
+            <div class="overview">
+
+            </div>
+            <div class="action">
+                <button class="add">Add Funds</button>
+                <button class="make">Make Order</button>
+            </div>
+        </section> 
+        <section id="wallet" class="dashboard hide">
+            <div class="overview">
+
+            </div>
+            <div class="action">
+                <button class="add">Add Funds</button>
+                <button class="withdraw">Withdraw Funds</button>
+            </div>
+        </section> 
+
+            <section id="profile" class="dashboard hide">
+                <div class="profile-header">
+                    <h2><span style="color: #FFB100;">Hi</span> Michael</h2>
+                </div>
+                <form>
+            
+                    <div class='form-container'>
+            
+                        <div class="form-box">
+                            <p>Username</p>
+                            <input type="text" name="username" placeholder='@jonnyD' />
+                        </div>
+            
+                        <div class="form-box">
+                            <p>Full Name</p>
+                            <input type="text" name="fullName" placeholder='John Doe' required />
+            
+                        </div>
+            
+                        <div class="form-box">
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="johndoe@gmail.com" required />
+                        </div>
+            
+                        <div class="form-box">
+                            <p>Phone</p>
+                            <input type="tel" name="phone" placeholder="+2348123456789" required />
+                        </div>
+                        <div class="form-box">
+                            <p>Delivery Address</p>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="2, Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, distinctio?"></textarea>
+                        </div>
+
+            
+            
+            
+                        <div class="regBtn form-box">
+                            <button>Update Info</button>
+                        </div>
+            
+                        <small class="security">
+                            <a href="">Security Settings</a>
+                        </small>
+            
+            
+                    </div>
+            
+                </form>
+            </section>
+    </section>
+    <!-- NAV BAR -->
+
+<script src="script.js"></script>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

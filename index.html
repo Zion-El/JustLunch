@@ -19,16 +19,16 @@
     <!-- NAV BAR -->
     <div class="nav-bar">
     
-        <p class="logo">JL</p>
+        <p class="logo"><span style="color: #FFB100;">J</span> <span style="color: green;">L</span></p>
     
         <button onclick="showMenu()" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <button onclick="closeMenu()" id="closer"><i class="fa fa-times" aria-hidden="true"></i></button>
         <ul id="nav-menu">
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#menu">Menu</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><button onclick="indexAlone()"><a href="/#home">Home</a></button></li>
+            <li><button onclick="menuAlone()"><a href="/#menu">Menu</a></button></li>
+            <li><button><a href="">Gallery</a></button></li>
+            <li><button onclick="aboutAlone()"><a href="/#about">About</a></button></li>
+            <li><button onclick="contactAlone()"><a href="/#contact">Contact</a></button></li>
             <li class="auth"><a href="login.html">Login</a></li>
             <li class="auth"><a href="signup.html">Sign Up</a></li>
             <li class="dropdown">
@@ -78,12 +78,12 @@
 
             <div class='hero-container-content '>
                 <div class="hero-text">
-                    <h1 class='hero-title'>Just Lunch
+                    <h1 class='hero-title'><span style="color: #FFB100;">J</span>ust <span style="color: green;">L</span>unch
                     </h1>
                     <p class="hero-desc">... delivering a tasty afternoon</p>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="dashboard.html">
                         <button class=''>Order Now</button>
                     </a>
         
@@ -93,16 +93,16 @@
     </div>
 
     <!-- MENU SECTION -->
-    <div id="menu">
+    <div id="menu" class="hide">
         <div class='menu-overlay'></div>
 
     </div>
 
     <!-- GALLERY SECTION -->
-    <div id="gallery"></div>
+    <div id="gallery" class="hide"></div>
 
     <!-- CONTACT SECTION -->
-    <div id="contact" class="contain">
+    <div id="contact" class="contain hide">
         <div class="contact-overlay">
 
         </div>
