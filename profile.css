@@ -18,6 +18,7 @@
 .form-box p{
     font-family: 'Nunito';
     color: #EEEEEE;
+    margin-bottom: 0;
 }
 
 .form-container input, textarea{
@@ -66,6 +67,6 @@
 @media screen and (max-width: 375px) {
     #profile .overlay, .overlayer {
             width: 100%;
-            min-height: 130vh;
+            min-height: 100vh;
         }
 }

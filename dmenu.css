@@ -1,0 +1,170 @@
+.menu-cover{
+    width: 100%;
+    height: 80vh;
+    background-color: #EEEEEE;
+    border-radius: 40px;
+    position: relative;
+}
+.menu-container{
+        width: 100%;
+        height: 15%;
+        margin-top: 1rem;
+        background-color: green;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.menu-container h2{
+    font-family: 'Aref Ruqaa';
+    color: #EEEEEE;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    margin:  auto;
+}
+
+.menu-box{
+    padding: .5rem;
+}
+.menu-box-content{
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.food-tab{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    height: 10rem;
+    box-shadow: 10px 10px 50px #999;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc{
+    width: 80%;
+}
+
+.image-box{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    /* position: absolute; */
+    top: -40%;
+    left: 35%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.food-tab img{
+    margin: auto auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 3;
+
+}
+
+.food-tab h6{
+    color: Red;
+    font-family: 'Aref Ruqqa';
+    font-size: 1rem;
+    opacity: .8;
+}
+.food-tab hr{
+ margin: 3px 0;
+ color: #EEEEEE;
+ opacity: .6;
+}
+.food-tab p{
+    color: gray;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+.food-tab .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-tab .header p{
+    color:#FFB100;
+}
+.day{
+    font-size: 18px;
+    font-family: 'Great Vibes';
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #dmenu.dashboard{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .menu-box-content{
+        padding: 0 1rem;
+    }
+    .desc{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .desc{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    #dmenu.dashboard {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .menu-box-content {
+        padding: 0 .2rem;
+    }
+
+    .desc {
+        width: 80%;
+    }
+        .food-tab {
+            padding: 10px;
+            height: 10rem;
+        }
+
+        .image-box {
+            width: 100px;
+            height: 100px;
+        }
+    
+        .food-tab img {
+            margin: auto auto;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .header h6, .header p{
+            margin: 0;
+            margin-top: 5px;
+        }
+        .food-tab hr {
+            margin: 1px 0;
+        }
+}

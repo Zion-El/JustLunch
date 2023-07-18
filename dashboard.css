@@ -74,6 +74,10 @@ nav{
 
 .profiler{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .profiler button{
     background: none;
@@ -205,21 +209,20 @@ nav{
 }
 
 
-#profile.hide, #home.hide, #wallet.hide, #transaction.hide{
+#profile.hide, #home.hide, #wallet.hide, #transaction.hide, #dmenu.hide{
     display: none;
 }
 
-#homebtn.active, #walletbtn.active, #profilebtn.active, #historybtn.active{
-    border: 1px solid green;
+#dmenubtn.active, #homebtn.active, #walletbtn.active, #profilebtn.active, #historybtn.active{
+    border: 1px solid green !important;
     border-radius: 50%;
     /* padding: 1px; */
     color: green;
     transition: all ease-in-out .5s;
 }
-#homebtn.active i, #walletbtn.active i, #profilebtn.active i, #historybtn.active i{
+#dmenubtn.active i, #homebtn.active i, #walletbtn.active i, #profilebtn.active i, #historybtn.active i{
     color: green;
     margin-bottom: -5px;
-    
 }
 
 
