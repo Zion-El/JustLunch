@@ -126,6 +126,13 @@
     .desc{
         width: 80%;
     }
+    .menu-cover {
+        height: 60vh;
+    }
+
+    .menu-container {
+        height: 10%;
+    }
 }
 @media screen and (max-width: 768px) {
 
