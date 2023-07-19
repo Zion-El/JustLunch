@@ -8,6 +8,15 @@
    
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .logo span{
     font-style: italic;
     font-family: 'Rubik Dirt';
@@ -15,33 +24,26 @@
     letter-spacing: -5px;
 }
 
+body{
+        background-image: url('assets/ewa.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+}
 .main{
-    /* height: 100vh; */
-    /* background-color: #E0E0EE; */
     position: relative;
+
 }
 
 
 .overlay{
-        background-image: url('assets/ewa.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         min-height: 100vh;
         width: 100%;
         z-index: -999;
         position: absolute;
         top: 0;
         left: 0;
-}
-.overlayer{
-    background-color: #000;
-            min-height: 100vh;
-                width: 100%;
-                opacity: .9;
 }
 
 nav{
@@ -164,6 +166,7 @@ nav{
     justify-content: center;
     font-family: 'Nunito';
     gap: 3px;
+
 }
 .tab-container a{
     text-decoration: none;
@@ -209,7 +212,7 @@ nav{
 }
 
 
-#profile.hide, #home.hide, #wallet.hide, #transaction.hide, #dmenu.hide{
+#profile.hide, #home.hide, #wallet.hide, #history.hide, #dmenu.hide{
     display: none;
 }
 
@@ -219,12 +222,12 @@ nav{
     /* padding: 1px; */
     color: green;
     transition: all ease-in-out .5s;
+    overflow: hidden;
 }
 #dmenubtn.active i, #homebtn.active i, #walletbtn.active i, #profilebtn.active i, #historybtn.active i{
     color: green;
     margin-bottom: -5px;
 }
-
 
 .table-section{
     padding: 1rem;
@@ -290,3 +293,6 @@ nav{
         align-items: center; */
         }
 }
+
+
+

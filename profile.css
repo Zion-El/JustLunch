@@ -51,22 +51,3 @@
     float: right;
     margin-top: 20px;
 }
-
-@media screen and (max-width: 425px) {
-    #profile .overlay, .overlayer {
-            width: 100%;
-            min-height: 125vh;
-        }
-}
-@media screen and (max-width: 414px) {
-    #profile .overlay, .overlayer {
-            width: 100%;
-            min-height: 100vh;
-        }
-}
-@media screen and (max-width: 375px) {
-    #profile .overlay, .overlayer {
-            width: 100%;
-            min-height: 100vh;
-        }
-}
