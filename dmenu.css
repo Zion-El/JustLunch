@@ -196,14 +196,13 @@
 
 /* ################ MENU MODAL ################*/
 
-#convection .modal-content,
+#convection .modal-content, #top_funds .modal-content,
 #remove_funds .modal-content{
     background-color: #EEEEEE;
     border-radius: 14px;
 }
 
-#convection .modal-header,
-#remove_funds .modal-header{
+#convection .modal-header,#top_funds .modal-header, #remove_funds .modal-header{
     background-color: green;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
@@ -329,6 +328,24 @@
     justify-content: space-between;
 }
 
+.opay-details h5{
+    color: green;
+    font-family: 'Aref Ruqaa';
+    text-align: center;
+}
+.opay-details p{
+    color: gray;
+    font-family: 'Nunito';
+    text-align: center;
+    line-height: 12px;
+}
+.opay-details span{
+    color: gray;
+    font-family: 'Nunito';
+    text-align: center;
+    font-weight: 600;
+}
+
 
 @media screen and (max-width: 425px) {
     .food-highlight {
@@ -354,3 +371,17 @@
         font-size: 10px;
     }
 }
+
+
+/* ADD FUNDS MODAL */
+.payment{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment button{
+    width: 48%;
+}
+
+

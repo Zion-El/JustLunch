@@ -68,8 +68,8 @@
 
             </div>
             <div class="action">
-                <button class="add">Add Funds</button>
-                <button class="make">Make Order</button>
+                <button class="add" type="button" data-bs-toggle="modal" data-bs-target="#top">Add Funds</button>
+                <button onclick="menuAlone()" class="make">Make Order</button>
             </div>
 
             <div class="table-section table-responsive">
@@ -151,6 +151,41 @@
                     </tbody>
                 </table>
             </div>
+            <div class="modal fade" id="top" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            <div class="payment mb-t">
+                                <button class="btn btn-warning">Pay with Paystack</button>
+                                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#opay1">Pay with
+                                    Opay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- pay with opay -->
+            <div class="modal fade" id="opay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="opay-details">
+                                <h5>Account Details</h5>
+                                <hr>
+                                <p><span>Account Number: </span>81202099765</p>
+                                <p><span>Acount Name: </span>Just Lunch </p>
+                                <p><span>Bank: </span>Opay</p>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Process</button>
+                                    </div> -->
+                    </div>
+                </div>
+            </div>
 
         </section> 
         <section id="wallet" class="dashboard hide">
@@ -158,38 +193,45 @@
 
             </div>
             <div class="action">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#add_funds" class="add">Add Funds</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#top_funds" class="add">Add Funds</button>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#remove_funds" class="withdraw">Withdraw Funds</button>
             </div>
 
             <!-- Add Funds Modal -->
-            <div class="modal fade modal-sm" id="add_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="top_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Deposit Slip</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
                                             <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="message-text" class="col-form-label">Message:</label>
-                                                        <textarea class="form-control" id="message-text"></textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Send message</button>
+                                                <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                                <div class="payment mb-t">
+                                                    <button class="btn btn-warning">Pay with Paystack</button>
+                                                    <button class="btn btn-success"type="button" data-bs-toggle="modal" data-bs-target="#opay">Pay with Opay</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
             </div>
 
+<!-- pay with opay -->
+            <div class="modal fade" id="opay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="opay-details">
+                                <h5>Account Details</h5>
+                                <hr>
+                                <p><span>Account Number: </span>81202099765</p>
+                                <p><span>Acount Name: </span>Just Lunch </p>
+                                <p><span>Bank: </span>Opay</p>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Process</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
             <!-- Withdraw Funds Modal -->
             <div class="modal fade" id="remove_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -227,6 +269,8 @@
                                     </div>
             </div>
         </section> 
+
+        
         
         <section id="dmenu" class="dashboard hide">
             <div class="menu-cover">
