@@ -196,17 +196,20 @@
 
 /* ################ MENU MODAL ################*/
 
-#convection .modal-content{
+#convection .modal-content,
+#remove_funds .modal-content{
     background-color: #EEEEEE;
     border-radius: 14px;
 }
 
-#convection .modal-header{
+#convection .modal-header,
+#remove_funds .modal-header{
     background-color: green;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#convection .modal-body{
+#convection .modal-body,
+#remove_funds .modal-body{
     padding: 1rem;
 }
 #convection form{
@@ -319,7 +322,8 @@
     font-size: 12px;
 }
 
-#convection .modal-footer{
+#convection .modal-footer,
+#remove_funds .modal-footer{
     width: 100%;
     display: flex;
     justify-content: space-between;

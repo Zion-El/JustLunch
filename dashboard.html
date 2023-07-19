@@ -159,15 +159,15 @@
             </div>
             <div class="action">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#add_funds" class="add">Add Funds</button>
-                <button class="withdraw">Withdraw Funds</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#remove_funds" class="withdraw">Withdraw Funds</button>
             </div>
 
-            <!-- Funds Modal -->
+            <!-- Add Funds Modal -->
             <div class="modal fade modal-sm" id="add_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Thanks for Ordering</h5>
+                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Deposit Slip</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -185,6 +185,43 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                 <button type="button" class="btn btn-primary">Send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            </div>
+
+            <!-- Withdraw Funds Modal -->
+            <div class="modal fade" id="remove_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Amount:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Acount Number:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Acount Name:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Bank:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Request Withdrawal</button>
                                             </div>
                                         </div>
                                     </div>
