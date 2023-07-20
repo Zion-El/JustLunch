@@ -24,7 +24,12 @@
             </div>
             
             <div class="profiler">
-                <button class="add" type="button" data-bs-toggle="modal" data-bs-target="#cart-modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                <button style="position: relative;" class="cart" type="button" data-bs-toggle="modal" data-bs-target="#cart-modal">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        <!-- <span class="visually-hidden">New alerts</span> -->
+                    </span>
+                </button>
                 
                 <button onclick="showProfiler()">
                     <div class="image-container">
@@ -41,7 +46,7 @@
                     </ul>
                 </div>
 
-            <!-- cart -->
+
 
             </div>
         </nav>
@@ -67,19 +72,21 @@
             </div>
         </section> 
 
+
+<!-- m################## modal ends #################### -->
+
+            <!-- cart -->
             <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title"
-                                style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;"
-                                id="exampleModalLabel">Inform Us About Deposit</h5>
+                                style="font-family: 'Aref Ruqaa'; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;"
+                                id="exampleModalLabel">Your Order</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="table-section table-responsive">
-            
-                                <p style="font-weight: 600; font-family: 'Aref Ruqaa';">Recent Orders</p>
+                            <div class="table-responsive">
             
                                 <table class="table">
                                     <!-- <thead class="table-dark table-borderless">
@@ -188,6 +195,110 @@
                             </div>
                         </div>
                         <div class="modal-footer">
+                            <!-- <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button> -->
+                            <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#order-confirmation">Make Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment for order -->
+            <div class="modal fade" id="order-confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+                            <div style="margin-bottom: 2rem;">
+                                <p style="text-align: center;">Your total bill is</p> 
+                                <h5 style="text-align: center; margin-top: -1rem;">#5,550</h5>
+                            </div>
+                            <div class="payment">
+                                <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#monnify1">Pay
+                                    from Wallet</button>
+                                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#opay1">Pay
+                                    with
+                                    Opay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pay with opay -->
+            <div class="modal fade" id="opay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="opay-details">
+                                <h5>Account Details</h5>
+                                <hr>
+                                <p><span>Account Number: </span>81202099765</p>
+                                <p><span>Acount Name: </span>Just Lunch </p>
+                                <p><span>Bank: </span>Opay</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btn-success" type="button" data-bs-toggle="modal"
+                                data-bs-target="#inform1">Inform Admin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pay with Monnify -->
+            <div class="modal fade" id="monnify1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                                                                        <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div> -->
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Amount:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+            
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btn-success">Process</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inform Admin -->
+            <div class="modal fade" id="inform1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"
+                                style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;"
+                                id="exampleModalLabel">Inform Us About Deposit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Amount:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Acount Name:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Bank:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+            
+                            </form>
+                        </div>
+                        <div class="modal-footer">
                             <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-success">Process</button>
                         </div>
@@ -195,7 +306,65 @@
                 </div>
             </div>
 
-        
+            <!-- payment modal -->
+            <div class="modal fade" id="top" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            <div class="payment">
+                                <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#monnify1">Pay with Monnify</button>
+                                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#opay1">Pay with
+                                    Opay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Withdraw Funds Modal -->
+            <div class="modal fade" id="remove_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Amount:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Acount Number:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Acount Name:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Bank:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+
+                                                </form>
+                                                <small class="text-danger">NB: This process attracts a transaction fee of ₦50 and may take up to 1 hour to be processed.</small>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-success">Request Withdrawal</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            </div>
+
+<!-- m################## modal ends #################### -->
+
+
+
         <section id="home" class="dashboard">
             <div class="overview">
 
@@ -284,237 +453,20 @@
                     </tbody>
                 </table>
             </div>
-            <div class="modal fade" id="top" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                            <div class="payment">
-                                <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#monnify1">Pay with Monnify</button>
-                                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#opay1">Pay with
-                                    Opay</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
             
-            <!-- pay with opay -->
-            <div class="modal fade" id="opay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog ">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="opay-details">
-                                <h5>Account Details</h5>
-                                <hr>
-                                <p><span>Account Number: </span>81202099765</p>
-                                <p><span>Acount Name: </span>Just Lunch </p>
-                                <p><span>Bank: </span>Opay</p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                        <button type="button" class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#inform1">Inform Admin</button>
-                                    </div>
-                    </div>
-                </div>
-            </div>
-            <!-- pay with Monnify -->
-            <div class="modal fade" id="monnify1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <!-- <div class="modal-header">
-                                                            <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div> -->
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Amount:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-            
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <button type="button" class="btn btn-success">Process</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inform Admin -->
-            <div class="modal fade" id="inform1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"
-                                style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;"
-                                id="exampleModalLabel">Inform Us About Deposit</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Amount:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Acount Name:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Bank:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
-                                </div>
-            
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-success">Process</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section> 
         <section id="wallet" class="dashboard hide">
             <div class="overview">
 
             </div>
             <div class="action">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#top_funds" class="add">Add Funds</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#top" class="add">Add Funds</button>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#remove_funds" class="withdraw">Withdraw Funds</button>
             </div>
 
-            <!-- Add Funds Modal -->
-            <div class="modal fade" id="top_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                                                <div class="payment mb-t">
-                                                    <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#monnify">Pay with Monify</button>
-                                                    <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#opay">Pay with Opay</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            </div>
-
-<!-- pay with opay -->
-            <div class="modal fade" id="opay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="opay-details">
-                                <h5>Account Details</h5>
-                                <hr>
-                                <p><span>Account Number: </span>81202099765</p>
-                                <p><span>Acount Name: </span>Just Lunch </p>
-                                <p><span>Bank: </span>Opay</p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <button type="button" class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#inform">Inform Admin</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- pay with Monnify -->
-            <div class="modal fade" id="monnify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <!-- <div class="modal-header">
-                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div> -->
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Amount:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                                <button type="button" class="btn btn-primary">Process</button>
-                                            </div>
-                                        </div>
-                                    </div>
-            </div>
-            <!-- Inform Admin -->
-            <div class="modal fade" id="inform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Inform Us About Deposit</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Amount:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Acount Name:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Bank:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
-                                                <button type="button" class="btn btn-success">Process</button>
-                                            </div>
-                                        </div>
-                                    </div>
-            </div>
-            <!-- Withdraw Funds Modal -->
-            <div class="modal fade" id="remove_funds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;" id="exampleModalLabel">Withdrawal Slip</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Amount:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Acount Number:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Acount Name:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="recipient-name" class="col-form-label">Bank:</label>
-                                                        <input type="text" class="form-control" id="recipient-name">
-                                                    </div>
-
-                                                </form>
-                                                <small class="text-danger">NB: This process attracts a transaction fee of ₦50 and may take up to 1 hour to be processed.</small>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
-                                                <button type="button" class="btn btn-success">Request Withdrawal</button>
-                                            </div>
-                                        </div>
-                                    </div>
-            </div>
         </section> 
 
         

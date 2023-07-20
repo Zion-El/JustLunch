@@ -1,3 +1,4 @@
+
 .menu-cover{
     width: 100%;
     height: 80vh;
@@ -200,13 +201,13 @@
 
 /* ################ MENU MODAL ################*/
 
-#inform .modal-content, #inform1 .modal-content, #convection .modal-content, #top_funds .modal-content,
+#cart-modal .modal-content, #inform .modal-content, #inform1 .modal-content, #convection .modal-content, #top_funds .modal-content,
 #remove_funds .modal-content{
     background-color: #EEEEEE;
     border-radius: 14px;
 }
 
-#inform .modal-header, #inform1 .modal-header, #convection .modal-header,#top_funds .modal-header, #remove_funds .modal-header{
+#cart-modal .modal-header, #inform .modal-header, #inform1 .modal-header, #convection .modal-header,#top_funds .modal-header, #remove_funds .modal-header{
     background-color: green;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
