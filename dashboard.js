@@ -75,7 +75,7 @@ function historyAlone() {
     profilebtn.classList.remove('active')
     homebtn.classList.remove('active')
     walletbtn.classList.remove('active')
-    menubtn.classList.remove('acitve')
+    menubtn.classList.remove('active')
     historybtn.classList.add('active')
 
     profile.classList.add('hide');

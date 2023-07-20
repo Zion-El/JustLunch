@@ -35,6 +35,9 @@
     flex-direction: column;
     gap: 2rem;
 }
+.menu-box-content button{
+    border: none;
+}
 
 .food-tab{
     background-color: #fff;
@@ -90,6 +93,7 @@
     color: gray;
     font-family: 'Nunito';
     font-size: 14px;
+    text-align: left;
 }
 .food-tab .header{
     display: flex;
@@ -196,13 +200,13 @@
 
 /* ################ MENU MODAL ################*/
 
-#convection .modal-content, #top_funds .modal-content,
+#inform .modal-content, #inform1 .modal-content, #convection .modal-content, #top_funds .modal-content,
 #remove_funds .modal-content{
     background-color: #EEEEEE;
     border-radius: 14px;
 }
 
-#convection .modal-header,#top_funds .modal-header, #remove_funds .modal-header{
+#inform .modal-header, #inform1 .modal-header, #convection .modal-header,#top_funds .modal-header, #remove_funds .modal-header{
     background-color: green;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
