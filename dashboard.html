@@ -24,7 +24,8 @@
             </div>
             
             <div class="profiler">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <button class="add" type="button" data-bs-toggle="modal" data-bs-target="#cart-modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                
                 <button onclick="showProfiler()">
                     <div class="image-container">
                         <i class="fa fa-2x fa-user-circle" aria-hidden="true"></i>
@@ -39,6 +40,9 @@
                         <li class="log"><a href="login.html">Log Out</a></li>
                     </ul>
                 </div>
+
+            <!-- cart -->
+
             </div>
         </nav>
 
@@ -62,6 +66,135 @@
                 </a>        
             </div>
         </section> 
+
+            <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"
+                                style="font-family: Great Vibes; color: #EEEEEE; text-shadow: 10px 10px 5px #FFB100;"
+                                id="exampleModalLabel">Inform Us About Deposit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="table-section table-responsive">
+            
+                                <p style="font-weight: 600; font-family: 'Aref Ruqaa';">Recent Orders</p>
+            
+                                <table class="table">
+                                    <!-- <thead class="table-dark table-borderless">
+                                                                <tr>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">First</th>
+                                                                    <th scope="col">Last</th>
+                                                                    <th scope="col">Handle</th>
+                                                                </tr>
+                                                            </thead> -->
+                                    <tbody>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th scope="row"></th> -->
+            
+                                            <td class="col-9 ">
+                                                <h6>Jolof Rice</h6>
+                                                <small>You placed an order on 01/01/2023</small>
+                                            </td>
+                                            <td class="col-2">₦3000</i></td>
+                                            <td class="col"><i class="fa fa-angle-right" aria-hidden="true"></i></td>
+                                        </tr>
+            
+                                        <!-- <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>Jacob</td>
+                                                                    <td>Thornton</td>
+                                                                    <td>@fat</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">3</th>
+                                                                    <td colspan="2">Larry the Bird</td>
+                                                                    <td>@twitter</td>
+                                                                </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn " data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success">Process</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         
         <section id="home" class="dashboard">
             <div class="overview">
@@ -152,7 +285,7 @@
                 </table>
             </div>
             <div class="modal fade" id="top" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body">
                             <!-- <button type="button" style="float: right;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
@@ -168,7 +301,7 @@
             
             <!-- pay with opay -->
             <div class="modal fade" id="opay1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog ">
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="opay-details">
@@ -882,7 +1015,7 @@
             
                         <div class="form-box">
                             <p>Email</p>
-                            <input type="email" name="email" placeholder="johndoe@gmail.com" required />
+                        <input type="email" name="email" placeholder="johndoe@gmail.com" required />
                         </div>
             
                         <div class="form-box">
